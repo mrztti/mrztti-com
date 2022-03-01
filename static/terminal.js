@@ -1,14 +1,11 @@
 $(document).on('keydown',function(key) {
-    //Catch return
     if(key.which == 13) {
         alert('You pressed enter!');
     }
-    if(key.which == 8){
+    else if(key.which == 8){
         alert('backspace trapped');
     }
-});
-
-$('#output').on('keypressed',function(key) {
+}).on('keypressed',function(key) {
     //Catch return
     if(key.which == 13) {
         
@@ -17,4 +14,3 @@ $('#output').on('keypressed',function(key) {
     }
 
 });
-
