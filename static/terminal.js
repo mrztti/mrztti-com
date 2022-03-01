@@ -1,8 +1,8 @@
-var written = "HELLO! \n>";
+var written = "<h1>HELLO!</h1><br>> ";
 var buffer = "";
 
 $(document).ready(function() {
-    $('#output').text(written);
+    $('#output').html(written);
 });
 
 
