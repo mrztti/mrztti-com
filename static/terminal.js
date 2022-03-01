@@ -55,10 +55,10 @@ $(function() {
     $(document).on('keydown', function(e) {
         var c = e.which;
         //Catch return
-        if(key.which == 13) {
+        if(e.which == 13) {
             alert('You pressed enter!');
         }
-        else if(key.which == 8){
+        else if(e.which == 8){
             alert('backspace trapped');
         }
         else {
