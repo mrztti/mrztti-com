@@ -94,7 +94,7 @@ $(function() {
             } else {
                 c = String.fromCharCode(c);
             }
-            $('#output').append(document.createTextNode(c));
+            $('#input').append(document.createTextNode(c));
         }
     });    
 });
