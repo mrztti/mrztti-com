@@ -13,3 +13,7 @@
 #input_bar {
     background-color: brown;
 }
+
+div {
+    display: inline;
+}
