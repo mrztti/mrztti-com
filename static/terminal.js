@@ -4,5 +4,5 @@ $(document).on('keypress',function(key) {
         alert('You pressed enter!');
     }
 
-    $('#output').append(document.createTextNode(key));
+    $('#output').append(document.createTextNode(String.fromCharCode(e.which)));
 });
