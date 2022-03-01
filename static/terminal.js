@@ -102,6 +102,7 @@ $(function() {
             }
             $('#input').append(document.createTextNode(c));
             buffer.append(c);
+            alert(buffer)
         }
     });    
 });
