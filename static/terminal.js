@@ -4,7 +4,7 @@ var in_symbol = "<br>>> ";
 
 $(document).ready(function() {
     $('#output').html(written);
-    $('#input').append(in_symbol);
+    $('#input').append(buffer);
 });
 
 
@@ -69,7 +69,7 @@ $(function() {
         var c = e.which;
         //Catch return
         if(e.which == 13) {
-            $('#output').append('<br>');
+            $('#output').append(in_symbol);
             $('#output').append(document.createTextNode(buffer));
             buffer = "";
             $('#input').html(in_symbol);
