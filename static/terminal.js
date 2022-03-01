@@ -83,6 +83,7 @@ $(function() {
             $('#output').append(document.createTextNode(buffer));
             $('#output').append("<br>");
             $('#output').append(cmd(buffer));
+            $('#output').append("<br>");
 
             buffer = "";
             $('#input').html(in_symbol);
