@@ -238,7 +238,7 @@ func main() {
 
 	// Static file server
 	var dir string
-	flag.StringVar(&dir, "dir", ".", "The directory to serve files from. Defaults to the current dir")
+	flag.StringVar(&dir, "dir", "./static/", "The directory to serve files from. Defaults to the current dir")
 	flag.Parse()
 	// This will serve files under http://localhost:8000/static/<filename>
 	router.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir(dir))))
