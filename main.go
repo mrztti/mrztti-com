@@ -187,6 +187,17 @@ func createQuizlet() Quizlet {
 }
 
 //==================== HANDLERS
+
+func indexHandler(w http.ResponseWriter, r *http.Request) {
+	log.Println("index GET")
+	t := template.Must(template.ParseFiles("templates/home/index.tmpl"))
+	message := "Hello"
+	err := t.Execute(w, message)
+	if err != nil {
+		panic(err)
+	}
+}
+
 func quizHandler(w http.ResponseWriter, r *http.Request) {
 	log.Println("generate quiz")
 	t := template.Must(template.ParseFiles("templates/quiz/quizlet.tmpl"))
@@ -221,6 +232,7 @@ func main() {
 	//specify endpoints, handler functions and HTTP method
 	router.HandleFunc("/quiz/new", quizHandler).Methods("GET")
 	router.HandleFunc("/quiz/home", homeHandler).Methods("GET")
+	router.HandleFunc("/", indexHandler).Methods("GET")
 	http.Handle("/", router)
 	fmt.Println("Set handlers...")
 	//start and listen to requests
