@@ -6,6 +6,9 @@ function cmd(c){
     if (c == "help"){
         return "You found help"
     }
+    if (c == "projects"){
+        return "You found help"
+    }
     else{
         return "<div class='warning'> Command unrecognized. <div class='warning faded'>(try typing 'help')</div></div>";
     }
@@ -14,7 +17,7 @@ function cmd(c){
 
 $(document).ready(function() {
     $('#output').html(written);
-    $('#input').append(in_symbol);
+    //$('#input').append(in_symbol);
 });
 
 
@@ -86,7 +89,7 @@ $(function() {
             $('#output').append("<br>");
 
             buffer = "";
-            $('#input').html(in_symbol);
+            //$('#input').html(in_symbol);
 
         }
         // Back
