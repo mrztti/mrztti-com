@@ -1,8 +1,10 @@
 var written = "<h1>HELLO!</h1>";
 var buffer = "";
+var in_symbol = "<br>>> ";
 
 $(document).ready(function() {
     $('#output').html(written);
+    $('#input').append(in_symbol);
 });
 
 
