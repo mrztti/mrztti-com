@@ -1,6 +1,6 @@
 var written = "<h1>HELLO!</h1>";
 var buffer = "";
-var in_symbol = "<br>> ";
+var in_symbol = "> ";
 
 function cmd(c){
     if (c == "help"){
