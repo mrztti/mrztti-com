@@ -58,7 +58,6 @@ $(function() {
 
     $(document).on('keydown', function(e) {
         var c = e.which;
-        alert(e.which);
         //Catch return
         if(e.which == 13) {
             alert('You pressed enter!');
