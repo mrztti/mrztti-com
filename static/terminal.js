@@ -101,8 +101,7 @@ $(function() {
                 c = String.fromCharCode(c);
             }
             $('#input').append(document.createTextNode(c));
-            buffer.append(c);
-            alert(buffer)
+            buffer = buffer + c;
         }
     });    
 });
