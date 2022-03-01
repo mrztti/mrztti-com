@@ -8,7 +8,7 @@ $(document).on('keydown',function(key) {
     }
 });
 
-$(#output).on('keypressed',function(key) {
+$('#output').on('keypressed',function(key) {
     //Catch return
     if(key.which == 13) {
         
