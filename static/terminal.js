@@ -1,5 +1,9 @@
-var written = "";
+var written = "HELLO!";
 var buffer = "";
+
+$(document).ready(function() {
+    $('#output').text(written);
+});
 
 
 $('#output').on('keypressed',function(key) {
