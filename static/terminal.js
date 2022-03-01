@@ -3,7 +3,7 @@ $(document).keydown(function(key) {
     if(key.which == 13) {
         alert('You pressed enter!');
     }
-    if (key.which == $.ui.keyCode.BACKSPACE) {
+    if (key.which == 8) {
 
         // Filters out events coming from any of the following tags so Backspace
         // will work when typing text, but not take the page back otherwise.
