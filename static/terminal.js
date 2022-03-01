@@ -11,6 +11,9 @@ $('#output').on('keypressed',function(key) {
 
 
 $(function() {
+    var whitelist = [
+        32, 50, 49, 51, 52, 53, 54, 55, 56, 57, 48, 45, 61, 91, 93, 92, 59, 39, 44, 46, 47
+    ]
 
     var _to_ascii = {
         '188': '44',
@@ -62,7 +65,10 @@ $(function() {
         else if(e.which == 8){
             alert('backspace trapped');
         }
-        else {
+        else if(e.which == 8){
+             
+        } 
+        else if(whitelist.includes(e.which)){
 
             //normalize keyCode 
             if (_to_ascii.hasOwnProperty(c)) {
