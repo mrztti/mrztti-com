@@ -69,7 +69,11 @@ $(function() {
         var c = e.which;
         //Catch return
         if(e.which == 13) {
-            alert('You pressed enter!');
+            $('#output').append('<br>');
+            $('#output').append(document.createTextNode(buffer));
+            buffer = "";
+            $('#input').html(in_symbol);
+
         }
         else if(e.which == 8){
         }
@@ -97,6 +101,7 @@ $(function() {
                 c = String.fromCharCode(c);
             }
             $('#input').append(document.createTextNode(c));
+            buffer.append(c);
         }
     });    
 });
