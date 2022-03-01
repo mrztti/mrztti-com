@@ -191,8 +191,13 @@ func createQuizlet() Quizlet {
 func indexHandler(w http.ResponseWriter, r *http.Request) {
 	log.Println("index GET")
 	t := template.Must(template.ParseFiles("templates/home/index.tmpl"))
-	message := "Hello"
-	err := t.Execute(w, message)
+	options := struct {
+		Message string
+	}{
+		"Hello world!",
+	}
+
+	err := t.Execute(w, options)
 	if err != nil {
 		panic(err)
 	}
