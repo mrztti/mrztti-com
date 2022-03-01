@@ -6,6 +6,15 @@ $(document).on('keydown',function(key) {
     if(key.which == 8){
         alert('backspace trapped');
     }
-
-    $('#output').append(document.createTextNode(String.fromCharCode(key.which)));
 });
+
+$(document).on('keypressed',function(key) {
+    //Catch return
+    if(key.which == 13) {
+        
+    } else {
+        $('#output').append(document.createTextNode(String.fromCharCode(key.which)));
+    }
+
+});
+
