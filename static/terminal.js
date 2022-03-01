@@ -96,7 +96,6 @@ $(function() {
         else if(e.which == 8){
             if (buffer.length > 0){
                 buffer = buffer.slice(0, -1);
-                $('#input').html(in_symbol);
                 $('#input').append(document.createTextNode(buffer));
             }
         }
