@@ -1,4 +1,4 @@
-var written = "HELLO!";
+var written = "HELLO! \n>";
 var buffer = "";
 
 $(document).ready(function() {
