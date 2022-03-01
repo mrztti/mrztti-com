@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"encoding/json"
+	"flag"
 	"fmt"
 	"html/template"
 	"io/ioutil"
@@ -234,13 +235,31 @@ func main() {
 	fmt.Printf("Starting mrztti.com backend on port %s\n", HTTP_SERVER_PORT)
 	//create a new router
 	router := mux.NewRouter()
+
+	// Static file server
+	var dir string
+	flag.StringVar(&dir, "dir", ".", "The directory to serve files from. Defaults to the current dir")
+	flag.Parse()
+	// This will serve files under http://localhost:8000/static/<filename>
+	router.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir(dir))))
+
 	//specify endpoints, handler functions and HTTP method
+	//QUIZ
 	router.HandleFunc("/quiz/new", quizHandler).Methods("GET")
 	router.HandleFunc("/quiz/home", homeHandler).Methods("GET")
+
+	//HOME
 	router.HandleFunc("/", indexHandler).Methods("GET")
-	http.Handle("/", router)
-	fmt.Println("Set handlers...")
+	fmt.Println("Set handlers!")
+
 	//start and listen to requests
+	srv := &http.Server{
+		Handler: router,
+		Addr:    "mrztti.com" + HTTP_SERVER_PORT,
+		// Good practice: enforce timeouts for servers you create!
+		WriteTimeout: 15 * time.Second,
+		ReadTimeout:  15 * time.Second,
+	}
 	fmt.Println("Listening now!")
-	http.ListenAndServe(HTTP_SERVER_PORT, router)
+	log.Fatal(srv.ListenAndServe())
 }
