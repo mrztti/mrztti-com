@@ -89,7 +89,7 @@ $(function() {
             $('#output').append("<br>");
 
             buffer = "";
-            //$('#input').html(in_symbol);
+            $('#input').html(buffer);
 
         }
         // Back
