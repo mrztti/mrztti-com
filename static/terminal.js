@@ -2,6 +2,16 @@ var written = "<h1>HELLO!</h1>";
 var buffer = "";
 var in_symbol = "<br>> ";
 
+function cmd(c){
+    if (c == "help"){
+        return "You found help"
+    }
+    else{
+        return "<div class='warning'> Command unrecognized. <div class='warning faded'>(try typing 'help')</div></div>";
+    }
+
+}
+
 $(document).ready(function() {
     $('#output').html(written);
     $('#input').append(in_symbol);
@@ -72,6 +82,8 @@ $(function() {
             $('#output').append(in_symbol);
             $('#output').append(document.createTextNode(buffer));
             $('#output').append("<br>");
+            $('#output').append(cmd(buffer));
+
             buffer = "";
             $('#input').html(in_symbol);
 

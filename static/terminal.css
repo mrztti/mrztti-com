@@ -1,3 +1,11 @@
 .terminal-font {
     font-family: 'Chakra Petch', sans-serif;
 }
+
+.faded {
+    opacity: 0.5
+}
+
+.warning {
+    color:gold
+}
