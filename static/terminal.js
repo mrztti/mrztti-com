@@ -1,5 +1,8 @@
-$(document).on('keypress',function(e) {
-    if(e.which == 13) {
+$(document).on('keypress',function(key) {
+    //Catch return
+    if(key.which == 13) {
         alert('You pressed enter!');
     }
+
+    $('#output').append(document.createTextNode(key));
 });
