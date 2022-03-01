@@ -219,9 +219,9 @@ func main() {
 	//create a new router
 	router := mux.NewRouter()
 	//specify endpoints, handler functions and HTTP method
-	router.HandleFunc("/new", quizHandler).Methods("GET")
-	router.HandleFunc("/home", homeHandler).Methods("GET")
-	http.Handle("/quiz", router)
+	router.HandleFunc("/quiz/new", quizHandler).Methods("GET")
+	router.HandleFunc("/quiz/home", homeHandler).Methods("GET")
+	http.Handle("/", router)
 	fmt.Println("Set handlers...")
 	//start and listen to requests
 	fmt.Println("Listening now!")
