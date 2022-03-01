@@ -71,6 +71,7 @@ $(function() {
         if(e.which == 13) {
             $('#output').append(in_symbol);
             $('#output').append(document.createTextNode(buffer));
+            $('#output').append("<br>");
             buffer = "";
             $('#input').html(in_symbol);
 
