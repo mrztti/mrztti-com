@@ -1,3 +1,6 @@
+var written = "";
+var buffer = "";
+
 
 $('#output').on('keypressed',function(key) {
     //Catch return
@@ -12,7 +15,7 @@ $('#output').on('keypressed',function(key) {
 
 $(function() {
     var whitelist = [
-        32, 50, 49, 51, 52, 53, 54, 55, 56, 57, 48, 45, 61, 91, 93, 92, 59, 39, 44, 46, 47,
+        32, 50, 49, 51, 52, 53, 54, 55, 56, 57, 48, 45, 61, 91, 93, 92, 59, 44, 46, 47,
         188, 109, 190, 191, 192, 220, 222, 221, 219, 173, 187, 186, 189
     ]
     
@@ -58,17 +61,20 @@ $(function() {
 
     $(document).on('keydown', function(e) {
         var c = e.which;
-        alert(e.which);
         //Catch return
         if(e.which == 13) {
             alert('You pressed enter!');
         }
         else if(e.which == 8){
-            alert('backspace trapped');
         }
-        else if(e.which == 8){
+        // arrow right
+        else if(e.which == 39){
              
-        } 
+        }
+        // arrow left
+        else if(e.which == 39){
+             
+        }  
         else if(whitelist.includes(e.which) || (e.which >= 65 && e.which <= 90)){
 
             //normalize keyCode 
