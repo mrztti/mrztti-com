@@ -68,7 +68,7 @@ $(function() {
         else if(e.which == 8){
              
         } 
-        else if(whitelist.includes(e.which)){
+        else if(whitelist.includes(e.which) || (e.which >= 65 && e.which <= 90)){
 
             //normalize keyCode 
             if (_to_ascii.hasOwnProperty(c)) {
