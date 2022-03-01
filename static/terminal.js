@@ -6,6 +6,7 @@ $(document).on('keypress',function(key) {
     if(key.which == 8){
         alert('backspace trapped');
     }
+    alert(key.which)
 
     $('#output').append(document.createTextNode(String.fromCharCode(key.which)));
 });
