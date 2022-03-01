@@ -1,4 +1,4 @@
-$(document).on('keypress',function(key) {
+$(document).keydown(function(key) {
     //Catch return
     if(key.which == 13) {
         alert('You pressed enter!');
