@@ -9,6 +9,10 @@ function cmd(c){
     if (c == "projects"){
         return "You found help"
     }
+    if (c == "reset"){
+        location.reload();
+        return ""
+    }
     else{
         return "<div class='warning'> Command unrecognized. <div class='warning faded'>(try typing 'help')</div></div>";
     }
