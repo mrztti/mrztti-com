@@ -78,6 +78,7 @@ $(function() {
     };
 
     $(document).on('keydown', function(e) {
+        window.scrollTo(0,document.body.scrollHeight);
         var c = e.which;
         //Catch return
         if(e.which == 13) {
