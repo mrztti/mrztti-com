@@ -22,6 +22,10 @@
     color:gold
 }
 
+.ok {
+    color:green;
+}
+
 div {
     display: inline;
 }
