@@ -1,4 +1,11 @@
-var written = "<p class='terminal-title'>MRZTTI.</p><p>Welcome to my website...</p>";
+var introduction = [
+    "<p class='terminal-title'>MRZTTI.</p>",
+    "Computer Science student from EPFL in Switzerland.",
+    "ML/AI, Data Science, WebDev & Security"
+]
+
+
+var written = introduction.join("\n");
 var buffer = "";
 var in_symbol = "> ";
 var available_commands =
