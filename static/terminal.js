@@ -127,3 +127,8 @@ $(function() {
         }
     });    
 });
+
+
+function mobileOpenKB(){
+    $("#hiddenTextInput").focus();
+}
