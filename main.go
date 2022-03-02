@@ -247,6 +247,7 @@ func main() {
 	//QUIZ
 	router.HandleFunc("/quiz/new", quizHandler).Methods("GET")
 	router.HandleFunc("/quiz", homeHandler).Methods("GET")
+	router.HandleFunc("/quiz/", homeHandler).Methods("GET")
 
 	//HOME
 	router.HandleFunc("/", indexHandler).Methods("GET")

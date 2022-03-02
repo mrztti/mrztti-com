@@ -1,5 +1,9 @@
 .terminal-font {
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.terminal-title {
+    font-family: 'Bungee Shade', cursive !important;
 }
 
 .faded {

@@ -1,4 +1,4 @@
-var written = "<h1>HELLO!</h1>";
+var written = "<h1 class='terminal-title'>MRZTTI.</h1>";
 var buffer = "";
 var in_symbol = "> ";
 
