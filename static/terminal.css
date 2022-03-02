@@ -11,22 +11,15 @@
     opacity: 0.5
 }
 
+.wide {
+    display: inline-block !important;
+    width: 100%;
+    max-width: 100%;
+    word-break: break-all;
+}
+
 .warning {
     color:gold
-}
-
-#input_bar {
-    display: inline-block !important;
-    width: 100%;
-    max-width: 100%;
-    word-break: break-all;
-}
-
-#output {
-    word-break: break-all;
-    display: inline-block !important;
-    width: 100%;
-    max-width: 100%;
 }
 
 div {
