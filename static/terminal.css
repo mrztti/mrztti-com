@@ -65,3 +65,8 @@ div {
         visibility: hidden;
     }
 }
+
+#pad_epfl {
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
