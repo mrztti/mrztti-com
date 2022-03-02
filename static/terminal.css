@@ -3,6 +3,11 @@
     font-size: 2vw;
 }
 
+.intro {
+    font-size: 1.5vw;
+    word-break: break-word !important;
+}
+
 .terminal-title {
     font-size: 8vw;
 }

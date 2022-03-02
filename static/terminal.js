@@ -1,7 +1,9 @@
 var introduction = [
+    "<div class='intro'>",
     "<p class='terminal-title'>MRZTTI.</p>",
     "Computer Science student from EPFL in Switzerland.",
-    "ML/AI, Data Science, WebDev & Security"
+    "<br>ML/AI, Data Science, WebDev & Security.",
+    "</div>"
 ]
 
 
