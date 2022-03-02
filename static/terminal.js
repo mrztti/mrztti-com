@@ -17,7 +17,9 @@ var available_commands =
         "<div class='ok'>whoami</div> - Who are you?",
         "<div class='ok'>projects</div> - See all my projects",
         "<div class='ok'>contact</div> - Get in touch with me",
-        "<div class='ok'>launch</div> - Launch a specific project"
+        "<div class='ok'>launch</div> - Launch a specific project",
+        "<div class='ok'>clear</div> - Clear the console"
+
     ];
 
 function cmd(c){
@@ -37,6 +39,11 @@ function cmd(c){
         location.reload();
         return ""
     }
+    if (c == "elotchoin"){
+        $(document).html("<h1 style='color: pink'>HUHUHUHUHUHUHUHUHUHU</h1> <br>");
+        return ""
+    }
+
     else{
         return "<div class='warning'> Command unrecognized. <div class='warning faded'>(try typing 'help')</div></div>";
     }
