@@ -17,7 +17,7 @@ body {
   }
 
   .ghost {
-    animation: fly 1s infinite;
+    animation: fly 10s infinite;
     top: 0;
 	left: 0;
 	position: fixed;
