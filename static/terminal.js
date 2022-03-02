@@ -40,7 +40,7 @@ function cmd(c){
         return ""
     }
     if (c == "elotchoin"){
-        $(document).html("<h1 style='color: pink'>HUHUHUHUHUHUHUHUHUHU</h1> <br>");
+        $(body).html("<h1 style='color: pink'>HUHUHUHUHUHUHUHUHUHU</h1> <br>");
         return ""
     }
 
