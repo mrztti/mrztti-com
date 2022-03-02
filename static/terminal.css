@@ -14,15 +14,11 @@
     color:gold
 }
 
-#input_bar {
+.terminal-block {
     display: inline-block !important;
     width: 100%;
     max-width: 100%;
     word-break: break-all;
-}
-
-div {
-    display: inline;
 }
 
 #hiddenTextInput {
