@@ -16,7 +16,7 @@ body {
     }
   }
 
-  .ghost > *{
+  .ghost {
     animation: fly 1s infinite;
     top: 0;
 	left: 0;
