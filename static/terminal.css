@@ -16,7 +16,8 @@
 
 #input_bar {
     display: inline-block !important;
-    width: 100%
+    width: 100%;
+    max-width: 100%;
 }
 
 div {
