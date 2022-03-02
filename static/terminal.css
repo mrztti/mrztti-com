@@ -6,6 +6,7 @@
 .emoji {
     width:2vw;
     height:2vw;
+    position: relative;
 }
 
 .intro {
