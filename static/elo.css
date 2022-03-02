@@ -24,6 +24,32 @@ body {
 	z-index: 999;
 	pointer-events: none;
 }
+
+.ghost2 {
+    animation: fly 17s infinite;
+    top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 999;
+	pointer-events: none;
+}
+
+.ghost3 {
+    animation: fly 35s infinite;
+    top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 999;
+	pointer-events: none;
+}
+.ghost4 {
+    animation: fly 5s infinite;
+    top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 999;
+	pointer-events: none;
+}
 @keyframes fly {
 	0% {
         width: 10vh;
