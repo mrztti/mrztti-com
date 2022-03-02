@@ -78,7 +78,6 @@ $(function() {
     };
 
     $(document).on('keydown', function(e) {
-        window.scrollTo(0,document.body.scrollHeight);
         var c = e.which;
         //Catch return
         if(e.which == 13) {
@@ -90,6 +89,8 @@ $(function() {
 
             buffer = "";
             $('#input').html(buffer);
+            var scrollingElement = (document.scrollingElement || document.body);
+            scrollingElement.scrollTop = scrollingElement.scrollHeight;
 
         }
         // Back
