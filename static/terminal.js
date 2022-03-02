@@ -13,7 +13,7 @@ var available_commands =
 
 function cmd(c){
     if (c == "help"){
-        return "<h3> --==-- Available commands: --==--</h3> <ul class='list-group list-group-flush faded'> <li class='list-group-item'>" + available_commands.join("</li><li class='list-group-item'>") + "</li></ul>";
+        return "<h5 class='warning'> --==-- Available commands: --==--</h3> <ul class='list-group list-group-flush faded'> <li class='list-group-item'>" + available_commands.join("</li><li class='list-group-item'>") + "</li></ul>";
     }
     if (c == "ls"){
         return "You found help"
