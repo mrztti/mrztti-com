@@ -17,7 +17,7 @@ body {
   }
 
   .ghost {
-    animation: fly 10s infinite;
+    animation: fly 25s infinite;
     top: 0;
 	left: 0;
 	position: fixed;
@@ -26,7 +26,7 @@ body {
 }
 @keyframes fly {
 	0% {
-
+        width: 10vh;
 		transform: translate(-200%,110vh) rotateZ(0deg);opacity: 1;
 	}
 
@@ -39,6 +39,7 @@ body {
 	}
 
 	37.5% {
+        height: 150vw;
 		transform: translate(-200%,-120%) rotateZ(-40deg);opacity: .5;
 	}
 
@@ -53,10 +54,12 @@ body {
 		transform: translate(200%,100vh) rotateZ(20deg);opacity: .25;
 	}
 	87.5% {
+        width: 200vh;
 		transform: translate(50vw,-200%) scale(1.75) rotateZ(20deg);
 	}
 
 	100% {
+        height:10vw;
 		transform: translate(-200%,110vh) rotateZ(0deg);opacity: 1;
 	}
 }
