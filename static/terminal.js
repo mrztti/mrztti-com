@@ -3,12 +3,12 @@ var buffer = "";
 var in_symbol = "> ";
 var available_commands =
     [
-        "help",
-        "ls",
-        "whoami",
-        "projects",
-        "contact",
-        "launch"
+        "help - Display help",
+        "ls - Show web tree",
+        "whoami - Who are you?",
+        "projects - See all my projects",
+        "contact - Get in touch with me",
+        "launch - Launch a specific project"
     ];
 
 function cmd(c){
