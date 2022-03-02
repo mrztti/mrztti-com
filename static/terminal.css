@@ -3,6 +3,11 @@
     font-size: 2vw;
 }
 
+.emoji {
+    width:2vw;
+    height:2vw;
+}
+
 .intro {
     font-size: 1.5vw;
     word-break: break-word !important;
