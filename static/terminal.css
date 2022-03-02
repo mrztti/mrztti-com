@@ -15,7 +15,7 @@
 }
 
 #input_bar {
-    background-color: brown;
+    background-color: rgb(131, 14, 14);
 }
 
 div {
@@ -29,4 +29,19 @@ div {
     width: 1px;
     height:1px;
     
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
 }
