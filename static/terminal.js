@@ -1,7 +1,7 @@
 var introduction = [
     "<div class='intro'>",
     "<p class='terminal-title'>MRZTTI.</p>",
-    "Computer Science student from EPFL<img class='emoji' src='https://twemoji.maxcdn.com/v/13.1.0/72x72/1f1e8-1f1ed.png'>",
+    "Computer Science student from EPFL<img class='emoji' src='static/swiss.png'>",
     "<br>ML/AI, Data Science, WebDev & Security.",
     "</div> <br><br>"
 ]
