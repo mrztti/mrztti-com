@@ -107,7 +107,7 @@ $(function() {
              
         }  
         else if(whitelist.includes(e.which) || (e.which >= 65 && e.which <= 90)){
-            alert(e.which);
+            //alert(e.which);
             //normalize keyCode 
             if (_to_ascii.hasOwnProperty(c)) {
                 c = _to_ascii[c];
