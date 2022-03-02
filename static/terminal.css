@@ -1,10 +1,10 @@
 .terminal-font {
     font-family: 'Press Start 2P', cursive;
-    font-size: 1vw;
+    font-size: 3vw;
 }
 
 .terminal-title {
-    font-size: 10vw;
+    font-size: 8vw;
 }
 
 .faded {
@@ -36,8 +36,8 @@ div {
 }
 
 .blink {
-    animation: blink-animation 1s steps(5, start) infinite;
-    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    animation: blink-animation 1s steps(10, start) infinite;
+    -webkit-animation: blink-animation 1s steps(10, start) infinite;
 }
 @keyframes blink-animation {
     to {
