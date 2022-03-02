@@ -1,15 +1,30 @@
 var written = "<p class='terminal-title'>MRZTTI.</p><p>Welcome to my website...</p>";
 var buffer = "";
 var in_symbol = "> ";
+var available_commands =
+    [
+        "help",
+        "ls",
+        "whoami",
+        "projects",
+        "contact",
+        "launch"
+    ];
 
 function cmd(c){
     if (c == "help"){
+        return "<p> Available commands: </p> <ul class='list-group list-group-flush'> <li class='list-group-item'>" + available_commands.join("</li><li class='list-group-item'>") + "</li></ul>";
+    }
+    if (c == "ls"){
         return "You found help"
+    }
+    if (c == "whoami"){
+        return "Sorry, I can't help you with these philosophical questions!"
     }
     if (c == "projects"){
         return "You found help"
     }
-    if (c == "reset"){
+    if (c == "reset" || c == "clear" || c == "reload"){
         location.reload();
         return ""
     }
