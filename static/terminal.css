@@ -1,5 +1,6 @@
 .terminal-font {
     font-family: 'Press Start 2P', cursive;
+    word-break: break-all;
 }
 
 .terminal-title {
