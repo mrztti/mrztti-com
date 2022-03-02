@@ -1,6 +1,5 @@
 .terminal-font {
     font-family: 'Press Start 2P', cursive;
-    word-break: break-all;
 }
 
 .terminal-title {
@@ -19,6 +18,7 @@
     display: inline-block !important;
     width: 100%;
     max-width: 100%;
+    word-break: break-all;
 }
 
 div {
