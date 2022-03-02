@@ -23,8 +23,10 @@ div {
 }
 
 #hiddenTextInput {
-    opacity: 0.3;
+    opacity: 0;
     display: block;
     position:absolute;
+    width: 1px;
+    height:1px;
     
 }
