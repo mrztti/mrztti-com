@@ -40,7 +40,7 @@ function cmd(c){
         return ""
     }
     if (c == "elotchoin"){
-        $(body).html("<h1 style='color: pink'>HUHUHUHUHUHUHUHUHUHU</h1> <br>");
+        window.location = "/static/elo.html"
         return ""
     }
 
