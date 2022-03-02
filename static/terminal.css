@@ -21,3 +21,10 @@
 div {
     display: inline;
 }
+
+#hiddenTextInput {
+    opacity: 0;
+    display: block;
+    position:absolute;
+    
+}
