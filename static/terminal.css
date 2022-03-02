@@ -14,8 +14,12 @@
     color:gold
 }
 
-.terminal-block {
+#input_bar {
     display: inline-block !important;
+}
+
+.terminal-block {
+    display: inline;
     width: 100%;
     max-width: 100%;
     word-break: break-all;
