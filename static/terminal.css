@@ -15,7 +15,7 @@
 }
 
 #input_bar {
-    width: 100%
+    min-width: 20vh
 }
 
 div {
