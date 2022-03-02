@@ -124,6 +124,7 @@ $(function() {
             }
             $('#input').append(document.createTextNode(c));
             buffer = buffer + c;
+            alert(c)
         }
     });    
 });
