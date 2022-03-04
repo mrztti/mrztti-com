@@ -229,7 +229,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 
 func zenitAPI(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
-	log.Println("CAUGHT REQUEST - Origin: " + vars["host"])
+	log.Println("CAUGHT REQUEST - Origin: " + vars["host"] + " - Status: " + vars["status"])
 	w.WriteHeader(http.StatusOK)
 	fmt.Fprint(w, "ZS API")
 }
@@ -257,7 +257,7 @@ func main() {
 	router.HandleFunc("/quiz/", homeHandler).Methods("GET")
 
 	//ZENITSwiss
-	router.HandleFunc("/zsAPI/", zenitAPI).Methods("GET")
+	router.HandleFunc("/zsAPI/{host}/{status}", zenitAPI).Methods("GET")
 
 	//HOME
 	router.HandleFunc("/", indexHandler).Methods("GET")
