@@ -228,7 +228,8 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func zenitAPI(w http.ResponseWriter, r *http.Request) {
-	log.Println("CAUGHT REQUEST")
+	vars := mux.Vars(r)
+	log.Println("CAUGHT REQUEST - Origin: " + vars["host"])
 	w.WriteHeader(http.StatusOK)
 	fmt.Fprint(w, "ZS API")
 }
