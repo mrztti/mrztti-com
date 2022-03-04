@@ -227,6 +227,12 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+func zenitAPI(w http.ResponseWriter, r *http.Request) {
+	log.Println("CAUGHT REQUEST")
+	w.WriteHeader(http.StatusOK)
+	fmt.Fprint(w, "ZS API")
+}
+
 //============================================================================
 // MAIN SERVER MUX
 //============================================================================
@@ -248,6 +254,9 @@ func main() {
 	router.HandleFunc("/quiz/new", quizHandler).Methods("GET")
 	router.HandleFunc("/quiz", homeHandler).Methods("GET")
 	router.HandleFunc("/quiz/", homeHandler).Methods("GET")
+
+	//ZENITSwiss
+	router.HandleFunc("/zsAPI/", zenitAPI).Methods("GET")
 
 	//HOME
 	router.HandleFunc("/", indexHandler).Methods("GET")
